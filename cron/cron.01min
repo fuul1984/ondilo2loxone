@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Ondilo2Loxone Scheduler
+# Prueft Heartbeat-/Abfrageintervall aus ondilo.cfg und sendet UDP-Telegramme.
+
+/usr/bin/perl \
+    /opt/loxberry/bin/plugins/ondilo2loxone/ondilo_scheduler.pl \
+    >/dev/null 2>&1
+
+exit 0
